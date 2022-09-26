@@ -1,0 +1,10 @@
+   0 mkdir -p /home/user/start /opt/task
+   1 echo "Start" > /home/user/start/1.txt
+   2 date >> /home/user/start/1.txt
+   3 cp /home/user/start/1.txt /opt/task/start1.txt
+   4 ls -la | tail -4 >> /opt/task/start1.txt
+   5 df -h > /home/user/start/2.txt
+   6 cat /proc/cpuinfo
+   7 cat /proc/cpuinfo | awk '{print $3}' | grep -w AuthenticX86 >> /home/user/start/2.txt
+   8 nano /home/user/start/2.txt
+   9 history > /tmp/history.txt 
